@@ -1,9 +1,26 @@
 # Claude in Safari
 
-An open-source **"Claude in Chrome" for Safari** — a Safari extension that lets
-Claude *see and drive your browser*: navigate, click, type, read pages, search
-the web, and complete multi-step tasks, with a chat sidebar and per-action
-safety approval.
+> **Claude in Chrome — but for Safari.** Open source, runs locally, uses your own key.
+
+An open-source Safari extension that lets Claude *see and drive your browser*:
+navigate, click, type, read pages, search the web, and complete multi-step tasks
+— with a chat sidebar and per-action safety approval.
+
+<!-- Replace with a real screen recording — this is the single most important asset.
+     Record a 30–60s clip (e.g. "find the top-rated ramen near me and open its site"),
+     save as docs/demo.gif, and it renders here. -->
+![Claude in Safari demo](docs/demo.gif)
+
+*Ask it in plain English — "find the best-rated coffee shop nearby and open its
+website" — and watch it search, pick, and navigate in your own Safari window.*
+
+---
+
+### Why this exists
+Safari has no "Claude in Chrome." So this brings the same idea to Safari — but
+**open source** (audit every line), **local** (nothing leaves your Mac but the
+model calls), and on **your own** Claude Code subscription *or* Anthropic API
+key. No middleman, no reselling, no mystery backend.
 
 It runs one of two "brains":
 
