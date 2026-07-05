@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font: 13px -apple-system, system-ui, sans-serif;
+      width: 280px; margin: 0; padding: 14px 16px;
+    }
+    .title { font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 8px; }
+    .dot { width: 9px; height: 9px; border-radius: 50%; background: #999; }
+    .dot.on { background: #00c853; }
+    .dot.off { background: #ff5252; }
+    .row { margin-top: 12px; }
+    .label { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; opacity: .6; }
+    .val { margin-top: 2px; word-break: break-all; }
+    input { width: 100%; box-sizing: border-box; padding: 6px 8px; margin-top: 4px;
+      border: 1px solid rgba(128,128,128,.4); border-radius: 6px; font: inherit; }
+    button { margin-top: 8px; padding: 6px 12px; border-radius: 6px; border: none;
+      background: #D97757; color: #fff; font: inherit; cursor: pointer; }
+    .hint { margin-top: 12px; font-size: 11px; opacity: .6; line-height: 1.4; }
+  </style>
+</head>
+<body>
+  <div class="title"><span id="dot" class="dot"></span> Claude in Safari</div>
+  <button id="openSidebar" style="width:100%; margin-top:12px; padding:9px 12px; font-weight:600; font-size:13px;">✳ Open Claude Sidebar</button>
+  <div id="sidebarHint" style="display:none; margin-top:6px; font-size:11px; color:#ff5252;"></div>
+  <div class="row">
+    <div class="label">Bridge</div>
+    <div class="val" id="statusText">…</div>
+  </div>
+  <div class="row">
+    <div class="label">Capabilities</div>
+    <div class="val" id="caps">checking…</div>
+  </div>
+  <div class="row">
+    <div class="label">Brain</div>
+    <select id="brainMode" style="width:100%; padding:6px 8px; margin-top:2px; border:1px solid rgba(128,128,128,.4); border-radius:6px;">
+      <option value="claude-code">Claude Code (your subscription)</option>
+      <option value="api">Anthropic API key (works without Claude Code)</option>
+    </select>
+    <div id="apiKeyWrap" style="display:none; margin-top:6px;">
+      <div class="val" id="apiStatus" style="margin-bottom:4px;">…</div>
+      <input id="anthropickey" type="password" placeholder="Paste your Anthropic API key (sk-ant-…)" autocomplete="off">
+      <div style="display:flex; gap:6px;">
+        <button id="apiSave" style="flex:1;">Save key</button>
+        <button id="apiClear" style="flex:0 0 auto; background:#555;">Clear</button>
+      </div>
+      <div class="hint" style="margin-top:6px;">Get a key at <b>console.anthropic.com</b>. Billed per-token to your Anthropic account. Stored in your macOS Keychain.</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="label">Web Search (SerpAPI)</div>
+    <div class="val" id="searchStatus" style="margin-bottom:4px;">…</div>
+    <input id="serpkey" type="password" placeholder="Paste your SerpAPI key" autocomplete="off">
+    <div style="display:flex; gap:6px;">
+      <button id="serpSave" style="flex:1;">Save key</button>
+      <button id="serpClear" style="flex:0 0 auto; background:#555;">Clear</button>
+    </div>
+    <div class="hint" style="margin-top:6px;">Free key at <b>serpapi.com/manage-api-key</b> — enables web/maps/shopping/news search. Stored in your macOS Keychain.</div>
+  </div>
+  <div class="row">
+    <div class="label">Bridge URL</div>
+    <input id="url" type="text" placeholder="ws://127.0.0.1:8787">
+    <button id="save">Save &amp; reconnect</button>
+  </div>
+  <div class="row">
+    <div class="label">Debug</div>
+    <div class="val" id="debug">…</div>
+  </div>
+  <div class="hint">The brain is Claude Code. Ask it in your terminal to drive Safari — this extension is the hands.</div>
+  <script src="popup.js"></script>
+</body>
+</html>

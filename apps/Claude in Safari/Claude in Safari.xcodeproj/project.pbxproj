@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E532FDDE2FF5B1F400C4168C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532FDDD2FF5B1F400C4168C /* AppDelegate.swift */; };
+		E532FDE22FF5B1F400C4168C /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = E532FDE02FF5B1F400C4168C /* Main.html */; };
+		E532FDE42FF5B1F400C4168C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E532FDE32FF5B1F400C4168C /* Icon.png */; };
+		E532FDE62FF5B1F400C4168C /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = E532FDE52FF5B1F400C4168C /* Style.css */; };
+		E532FDE82FF5B1F400C4168C /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = E532FDE72FF5B1F400C4168C /* Script.js */; };
+		E532FDEA2FF5B1F400C4168C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532FDE92FF5B1F400C4168C /* ViewController.swift */; };
+		E532FDED2FF5B1F400C4168C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E532FDEB2FF5B1F400C4168C /* Main.storyboard */; };
+		E532FDEF2FF5B1F400C4168C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E532FDEE2FF5B1F400C4168C /* Assets.xcassets */; };
+		E532FDF62FF5B1F400C4168C /* Claude in Safari Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E532FDF52FF5B1F400C4168C /* Claude in Safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E532FDFB2FF5B1F400C4168C /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532FDFA2FF5B1F400C4168C /* SafariWebExtensionHandler.swift */; };
+		E532FE0D2FF5B1F400C4168C /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = E532FE072FF5B1F400C4168C /* popup.js */; };
+		CC00000000000000000000AA /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = CC00000000000000000000AB /* content.js */; };
+		CC00000000000000000000AC /* sidebar.js in Resources */ = {isa = PBXBuildFile; fileRef = CC00000000000000000000AD /* sidebar.js */; };
+		E532FE0E2FF5B1F400C4168C /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = E532FE082FF5B1F400C4168C /* background.js */; };
+		E532FE0F2FF5B1F400C4168C /* images in Resources */ = {isa = PBXBuildFile; fileRef = E532FE092FF5B1F400C4168C /* images */; };
+		E532FE102FF5B1F400C4168C /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = E532FE0A2FF5B1F400C4168C /* popup.html */; };
+		E532FE112FF5B1F400C4168C /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = E532FE0B2FF5B1F400C4168C /* manifest.json */; };
+		E532FE122FF5B1F400C4168C /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = E532FE0C2FF5B1F400C4168C /* _locales */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E532FDF72FF5B1F400C4168C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E532FDD22FF5B1F300C4168C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E532FDF42FF5B1F400C4168C;
+			remoteInfo = "Claude in Safari Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E532FE022FF5B1F400C4168C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E532FDF62FF5B1F400C4168C /* Claude in Safari Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E532FDDA2FF5B1F300C4168C /* Claude in Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Claude in Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E532FDDD2FF5B1F400C4168C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E532FDE12FF5B1F400C4168C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		E532FDE32FF5B1F400C4168C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		E532FDE52FF5B1F400C4168C /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		E532FDE72FF5B1F400C4168C /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		E532FDE92FF5B1F400C4168C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E532FDEC2FF5B1F400C4168C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E532FDEE2FF5B1F400C4168C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E532FDF02FF5B1F400C4168C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E532FDF52FF5B1F400C4168C /* Claude in Safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Claude in Safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E532FDFA2FF5B1F400C4168C /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		E532FDFC2FF5B1F400C4168C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E532FE072FF5B1F400C4168C /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = Resources/popup.js; sourceTree = "<group>"; };
+		CC00000000000000000000AB /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = Resources/content.js; sourceTree = "<group>"; };
+		CC00000000000000000000AD /* sidebar.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = sidebar.js; path = Resources/sidebar.js; sourceTree = "<group>"; };
+		E532FE082FF5B1F400C4168C /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = Resources/background.js; sourceTree = "<group>"; };
+		E532FE092FF5B1F400C4168C /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = Resources/images; sourceTree = "<group>"; };
+		E532FE0A2FF5B1F400C4168C /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = Resources/popup.html; sourceTree = "<group>"; };
+		E532FE0B2FF5B1F400C4168C /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		E532FE0C2FF5B1F400C4168C /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = Resources/_locales; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E532FDD72FF5B1F300C4168C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E532FDF22FF5B1F400C4168C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E532FDD12FF5B1F300C4168C = {
+			isa = PBXGroup;
+			children = (
+				E532FDDC2FF5B1F300C4168C /* Claude in Safari */,
+				E532FDF92FF5B1F400C4168C /* Claude in Safari Extension */,
+				E532FDDB2FF5B1F300C4168C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E532FDDB2FF5B1F300C4168C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E532FDDA2FF5B1F300C4168C /* Claude in Safari.app */,
+				E532FDF52FF5B1F400C4168C /* Claude in Safari Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E532FDDC2FF5B1F300C4168C /* Claude in Safari */ = {
+			isa = PBXGroup;
+			children = (
+				E532FDDD2FF5B1F400C4168C /* AppDelegate.swift */,
+				E532FDE92FF5B1F400C4168C /* ViewController.swift */,
+				E532FDEB2FF5B1F400C4168C /* Main.storyboard */,
+				E532FDEE2FF5B1F400C4168C /* Assets.xcassets */,
+				E532FDF02FF5B1F400C4168C /* Info.plist */,
+				E532FDDF2FF5B1F400C4168C /* Resources */,
+			);
+			path = "Claude in Safari";
+			sourceTree = "<group>";
+		};
+		E532FDDF2FF5B1F400C4168C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E532FDE02FF5B1F400C4168C /* Main.html */,
+				E532FDE32FF5B1F400C4168C /* Icon.png */,
+				E532FDE52FF5B1F400C4168C /* Style.css */,
+				E532FDE72FF5B1F400C4168C /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E532FDF92FF5B1F400C4168C /* Claude in Safari Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E532FE062FF5B1F400C4168C /* Resources */,
+				E532FDFA2FF5B1F400C4168C /* SafariWebExtensionHandler.swift */,
+				E532FDFC2FF5B1F400C4168C /* Info.plist */,
+			);
+			path = "Claude in Safari Extension";
+			sourceTree = "<group>";
+		};
+		E532FE062FF5B1F400C4168C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E532FE072FF5B1F400C4168C /* popup.js */,
+				CC00000000000000000000AB /* content.js */,
+				CC00000000000000000000AD /* sidebar.js */,
+				E532FE082FF5B1F400C4168C /* background.js */,
+				E532FE092FF5B1F400C4168C /* images */,
+				E532FE0A2FF5B1F400C4168C /* popup.html */,
+				E532FE0B2FF5B1F400C4168C /* manifest.json */,
+				E532FE0C2FF5B1F400C4168C /* _locales */,
+			);
+			name = Resources;
+			path = "Claude in Safari Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E532FDD92FF5B1F300C4168C /* Claude in Safari */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E532FE032FF5B1F400C4168C /* Build configuration list for PBXNativeTarget "Claude in Safari" */;
+			buildPhases = (
+				E532FDD62FF5B1F300C4168C /* Sources */,
+				E532FDD72FF5B1F300C4168C /* Frameworks */,
+				E532FDD82FF5B1F300C4168C /* Resources */,
+				E532FE022FF5B1F400C4168C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E532FDF82FF5B1F400C4168C /* PBXTargetDependency */,
+			);
+			name = "Claude in Safari";
+			packageProductDependencies = (
+			);
+			productName = "Claude in Safari";
+			productReference = E532FDDA2FF5B1F300C4168C /* Claude in Safari.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E532FDF42FF5B1F400C4168C /* Claude in Safari Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E532FDFF2FF5B1F400C4168C /* Build configuration list for PBXNativeTarget "Claude in Safari Extension" */;
+			buildPhases = (
+				E532FDF12FF5B1F400C4168C /* Sources */,
+				E532FDF22FF5B1F400C4168C /* Frameworks */,
+				E532FDF32FF5B1F400C4168C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Claude in Safari Extension";
+			packageProductDependencies = (
+			);
+			productName = "Claude in Safari Extension";
+			productReference = E532FDF52FF5B1F400C4168C /* Claude in Safari Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E532FDD22FF5B1F300C4168C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					E532FDD92FF5B1F300C4168C = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					E532FDF42FF5B1F400C4168C = {
+						CreatedOnToolsVersion = 26.6;
+					};
+				};
+			};
+			buildConfigurationList = E532FDD52FF5B1F300C4168C /* Build configuration list for PBXProject "Claude in Safari" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E532FDD12FF5B1F300C4168C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E532FDDB2FF5B1F300C4168C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E532FDD92FF5B1F300C4168C /* Claude in Safari */,
+				E532FDF42FF5B1F400C4168C /* Claude in Safari Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E532FDD82FF5B1F300C4168C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E532FDE42FF5B1F400C4168C /* Icon.png in Resources */,
+				E532FDED2FF5B1F400C4168C /* Main.storyboard in Resources */,
+				E532FDE82FF5B1F400C4168C /* Script.js in Resources */,
+				E532FDE22FF5B1F400C4168C /* Main.html in Resources */,
+				E532FDEF2FF5B1F400C4168C /* Assets.xcassets in Resources */,
+				E532FDE62FF5B1F400C4168C /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E532FDF32FF5B1F400C4168C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E532FE122FF5B1F400C4168C /* _locales in Resources */,
+				E532FE0F2FF5B1F400C4168C /* images in Resources */,
+				E532FE102FF5B1F400C4168C /* popup.html in Resources */,
+				E532FE112FF5B1F400C4168C /* manifest.json in Resources */,
+				E532FE0E2FF5B1F400C4168C /* background.js in Resources */,
+				E532FE0D2FF5B1F400C4168C /* popup.js in Resources */,
+				CC00000000000000000000AA /* content.js in Resources */,
+				CC00000000000000000000AC /* sidebar.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E532FDD62FF5B1F300C4168C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E532FDEA2FF5B1F400C4168C /* ViewController.swift in Sources */,
+				E532FDDE2FF5B1F400C4168C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E532FDF12FF5B1F400C4168C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E532FDFB2FF5B1F400C4168C /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E532FDF82FF5B1F400C4168C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E532FDF42FF5B1F400C4168C /* Claude in Safari Extension */;
+			targetProxy = E532FDF72FF5B1F400C4168C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E532FDE02FF5B1F400C4168C /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E532FDE12FF5B1F400C4168C /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		E532FDEB2FF5B1F400C4168C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E532FDEC2FF5B1F400C4168C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E532FDFD2FF5B1F400C4168C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E532FDFE2FF5B1F400C4168C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		E532FE002FF5B1F400C4168C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Claude in Safari Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Claude in Safari Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				CODE_SIGN_ENTITLEMENTS = "Claude in Safari Extension/Claude in Safari Extension.entitlements";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.faisalalomari.claudesafari2.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E532FE012FF5B1F400C4168C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Claude in Safari Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Claude in Safari Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				CODE_SIGN_ENTITLEMENTS = "Claude in Safari Extension/Claude in Safari Extension.entitlements";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.faisalalomari.claudesafari2.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E532FE042FF5B1F400C4168C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Claude in Safari/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Claude in Safari";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				CODE_SIGN_ENTITLEMENTS = "Claude in Safari/Claude in Safari.entitlements";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.faisalalomari.claudesafari2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E532FE052FF5B1F400C4168C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Claude in Safari/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Claude in Safari";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				CODE_SIGN_ENTITLEMENTS = "Claude in Safari/Claude in Safari.entitlements";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.faisalalomari.claudesafari2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E532FDD52FF5B1F300C4168C /* Build configuration list for PBXProject "Claude in Safari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E532FDFD2FF5B1F400C4168C /* Debug */,
+				E532FDFE2FF5B1F400C4168C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E532FDFF2FF5B1F400C4168C /* Build configuration list for PBXNativeTarget "Claude in Safari Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E532FE002FF5B1F400C4168C /* Debug */,
+				E532FE012FF5B1F400C4168C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E532FE032FF5B1F400C4168C /* Build configuration list for PBXNativeTarget "Claude in Safari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E532FE042FF5B1F400C4168C /* Debug */,
+				E532FE052FF5B1F400C4168C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E532FDD22FF5B1F300C4168C /* Project object */;
+}

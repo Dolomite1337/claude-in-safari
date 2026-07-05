@@ -1,0 +1,20 @@
+# Dependencies / build output
+node_modules/
+apps/**/build/
+tools/cissynth/cissynth
+
+# Local machine state & secrets (never commit)
+*.env
+.env*
+config.json
+*.p8
+*.cer
+*.mobileprovision
+*.provisionprofile
+secrets*
+*-credentials*
+
+# Scratch / logs / OS
+*.bak
+*.log
+.DS_Store
